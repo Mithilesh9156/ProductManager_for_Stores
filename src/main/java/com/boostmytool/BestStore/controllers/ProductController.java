@@ -45,7 +45,6 @@ public class ProductController {
 		return"products/CreateProducts.html";
 	}
 
-	@SuppressWarnings("unchecked")
 	@PostMapping("/create")
 	public String createproduct(@Valid @ModelAttribute ProductDto productdto, BindingResult result, Model model) {
 		

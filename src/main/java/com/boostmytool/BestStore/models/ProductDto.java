@@ -13,7 +13,7 @@ public class ProductDto {
 	private String brand;
 	@NotEmpty(message = "The name is required")
 	private String category;
-	@Min(0)
+	@Min(10)
 	private double price;
 	@Size(min = 10, message = "The description should be at least 10 characters")
 	@Size(max = 2000, message = "The description cannot exceed 2000 characters")
